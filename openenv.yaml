@@ -1,9 +1,13 @@
 spec_version: 1
 name: email-triage-env
+version: 1.0.0
+author: uppada
+repository: https://github.com/varshu2024/email-triage-env
 type: space
 runtime: fastapi
 app: server.app:app
 port: 7860
+license: Apache-2.0
 description: >
   A real-world email triage OpenEnv environment. An AI agent processes inbox
   emails by classifying urgency, routing to departments, drafting replies,

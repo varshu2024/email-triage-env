@@ -112,7 +112,6 @@ def root():
         "env": "email-triage-env",
         "description": "Real-world Email Triage OpenEnv environment",
         "docs": "/docs",
-        "tasks": get_all_task_names(),
         "endpoints": {
             "health": "GET /health",
             "reset": "POST /reset?task=<task_name>",
@@ -121,3 +120,12 @@ def root():
             "tasks": "GET /tasks",
         },
     }
+
+
+def main():
+    import uvicorn
+    uvicorn.run("server.app:app", host="0.0.0.0", port=7860, reload=True)
+
+
+if __name__ == "__main__":
+    main()
