@@ -1,0 +1,23 @@
+spec_version: 1
+name: email-triage-env
+type: space
+runtime: fastapi
+app: server.app:app
+port: 7860
+description: >
+  A real-world email triage OpenEnv environment. An AI agent processes inbox
+  emails by classifying urgency, routing to departments, drafting replies,
+  and escalating critical issues. Three tasks of increasing difficulty.
+tags:
+  - openenv
+  - email
+  - triage
+  - real-world
+  - nlp
+tasks:
+  - name: classify-urgency
+    difficulty: easy
+  - name: route-emails
+    difficulty: medium
+  - name: full-triage
+    difficulty: hard
